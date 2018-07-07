@@ -1,44 +1,44 @@
 <?php
 header('Content-Type: text/html; charset=ISO-8859-15');
 require('fpdf/fpdf.php');
-		$nom= str_replace("¤","EUR",htmlspecialchars($_POST['nom'], ENT_IGNORE,'ISO-8859-15'));
-		$adresse= str_replace("¤","EUR",htmlspecialchars($_POST['adresse'], ENT_IGNORE,'ISO-8859-15'));
-		$telephone= str_replace("¤","EUR",htmlspecialchars($_POST['telephone'], ENT_IGNORE,'ISO-8859-15'));
-		$e_mail= str_replace("¤","EUR",htmlspecialchars($_POST['e_mail'], ENT_IGNORE,'ISO-8859-15'));
-		$nom_locataires= str_replace("¤","EUR",htmlspecialchars($_POST['nom_locataires'], ENT_IGNORE,'ISO-8859-15'));
-		$adresse2= str_replace("¤","EUR",htmlspecialchars($_POST['adresse2'], ENT_IGNORE,'ISO-8859-15'));
-		$telephone2= str_replace("¤","EUR",htmlspecialchars($_POST['telephone2'], ENT_IGNORE,'ISO-8859-15'));
-		$e_mail2= str_replace("¤","EUR",htmlspecialchars($_POST['e_mail2'], ENT_IGNORE,'ISO-8859-15'));
-		$adresse3= str_replace("¤","EUR",htmlspecialchars($_POST['adresse3'], ENT_IGNORE,'ISO-8859-15'));
-		$type_location= str_replace("¤","EUR",htmlspecialchars($_POST['type_location'], ENT_IGNORE,'ISO-8859-15'));
-		$superficie= str_replace("¤","EUR",htmlspecialchars($_POST['superficie'], ENT_IGNORE,'ISO-8859-15'));
-		$nbre_pieces= str_replace("¤","EUR",htmlspecialchars($_POST['nbre_pieces'], ENT_IGNORE,'ISO-8859-15'));
-		$nbre_pers= str_replace("¤","EUR",htmlspecialchars($_POST['nbre_pers'], ENT_IGNORE,'ISO-8859-15'));
-		$fumeur= str_replace("¤","EUR",htmlspecialchars($_POST['fumeur'], ENT_IGNORE,'ISO-8859-15'));
-		$animaux= str_replace("¤","EUR",htmlspecialchars($_POST['animaux'], ENT_IGNORE,'ISO-8859-15'));
-		$vue= str_replace("¤","EUR",htmlspecialchars($_POST['vue'], ENT_IGNORE,'ISO-8859-15'));
-		$salon= str_replace("¤","EUR",htmlspecialchars($_POST['salon'], ENT_IGNORE,'ISO-8859-15'));
-		$cuisine= str_replace("¤","EUR",htmlspecialchars($_POST['cuisine'], ENT_IGNORE,'ISO-8859-15'));
-		$chambres= str_replace("¤","EUR",htmlspecialchars($_POST['chambres'], ENT_IGNORE,'ISO-8859-15'));
-		$sanitaires= str_replace("¤","EUR",htmlspecialchars($_POST['sanitaires'], ENT_IGNORE,'ISO-8859-15'));
-		$autres= str_replace("¤","EUR",htmlspecialchars($_POST['autres'], ENT_IGNORE,'ISO-8859-15'));
-		$date1= str_replace("¤","EUR",htmlspecialchars($_POST['date1'], ENT_IGNORE,'ISO-8859-15'));
-		$date2= str_replace("¤","EUR",htmlspecialchars($_POST['date2'], ENT_IGNORE,'ISO-8859-15'));
-		$date3= str_replace("¤","EUR",htmlspecialchars($_POST['date3'], ENT_IGNORE,'ISO-8859-15'));
-		$date4= str_replace("¤","EUR",htmlspecialchars($_POST['date4'], ENT_IGNORE,'ISO-8859-15'));
-		$prix= str_replace("¤","EUR",htmlspecialchars($_POST['prix'], ENT_IGNORE,'ISO-8859-15'));
-		$arrhe1= str_replace("¤","EUR",htmlspecialchars($_POST['arrhe1'], ENT_IGNORE,'ISO-8859-15'));
-		$arrhe2= str_replace("¤","EUR",htmlspecialchars($_POST['arrhe2'], ENT_IGNORE,'ISO-8859-15'));
-		$solde= str_replace("¤","EUR",htmlspecialchars($_POST['solde'], ENT_IGNORE,'ISO-8859-15'));
-		$depot1= str_replace("¤","EUR",htmlspecialchars($_POST['depot1'], ENT_IGNORE,'ISO-8859-15'));
-		$depot2= str_replace("¤","EUR",htmlspecialchars($_POST['depot2'], ENT_IGNORE,'ISO-8859-15'));
-		$condition_paiement= str_replace("¤","EUR",htmlspecialchars($_POST['condition_paiement'], ENT_IGNORE,'ISO-8859-15'));
-		$taxe= str_replace("¤","EUR",htmlspecialchars($_POST['taxe'], ENT_IGNORE,'ISO-8859-15'));
-		$gaz= str_replace("¤","EUR",htmlspecialchars($_POST['gaz'], ENT_IGNORE,'ISO-8859-15'));
-		$autre_taxe= str_replace("¤","EUR",htmlspecialchars($_POST['autre_taxe'], ENT_IGNORE,'ISO-8859-15'));
-		//$clef= str_replace("¤","EUR",htmlspecialchars($_POST['clef'], ENT_IGNORE,'ISO-8859-15'));
-		//$menage= str_replace("¤","EUR",htmlspecialchars($_POST['menage'], ENT_IGNORE,'ISO-8859-15'));
-		$ville= str_replace("¤","EUR",htmlspecialchars($_POST['ville'], ENT_IGNORE,'ISO-8859-15'));
+		$nom= str_replace("ï¿½","EUR",htmlspecialchars($_POST['nom'], ENT_IGNORE,'ISO-8859-15'));
+		$adresse= str_replace("ï¿½","EUR",htmlspecialchars($_POST['adresse'], ENT_IGNORE,'ISO-8859-15'));
+		$telephone= str_replace("ï¿½","EUR",htmlspecialchars($_POST['telephone'], ENT_IGNORE,'ISO-8859-15'));
+		$e_mail= str_replace("ï¿½","EUR",htmlspecialchars($_POST['e_mail'], ENT_IGNORE,'ISO-8859-15'));
+		$nom_locataires= str_replace("ï¿½","EUR",htmlspecialchars($_POST['nom_locataires'], ENT_IGNORE,'ISO-8859-15'));
+		$adresse2= str_replace("ï¿½","EUR",htmlspecialchars($_POST['adresse2'], ENT_IGNORE,'ISO-8859-15'));
+		$telephone2= str_replace("ï¿½","EUR",htmlspecialchars($_POST['telephone2'], ENT_IGNORE,'ISO-8859-15'));
+		$e_mail2= str_replace("ï¿½","EUR",htmlspecialchars($_POST['e_mail2'], ENT_IGNORE,'ISO-8859-15'));
+		$adresse3= str_replace("ï¿½","EUR",htmlspecialchars($_POST['adresse3'], ENT_IGNORE,'ISO-8859-15'));
+		$type_location= str_replace("ï¿½","EUR",htmlspecialchars($_POST['type_location'], ENT_IGNORE,'ISO-8859-15'));
+		$superficie= str_replace("ï¿½","EUR",htmlspecialchars($_POST['superficie'], ENT_IGNORE,'ISO-8859-15'));
+		$nbre_pieces= str_replace("ï¿½","EUR",htmlspecialchars($_POST['nbre_pieces'], ENT_IGNORE,'ISO-8859-15'));
+		$nbre_pers= str_replace("ï¿½","EUR",htmlspecialchars($_POST['nbre_pers'], ENT_IGNORE,'ISO-8859-15'));
+		$fumeur= str_replace("ï¿½","EUR",htmlspecialchars($_POST['fumeur'], ENT_IGNORE,'ISO-8859-15'));
+		$animaux= str_replace("ï¿½","EUR",htmlspecialchars($_POST['animaux'], ENT_IGNORE,'ISO-8859-15'));
+		$vue= str_replace("ï¿½","EUR",htmlspecialchars($_POST['vue'], ENT_IGNORE,'ISO-8859-15'));
+		$salon= str_replace("ï¿½","EUR",htmlspecialchars($_POST['salon'], ENT_IGNORE,'ISO-8859-15'));
+		$cuisine= str_replace("ï¿½","EUR",htmlspecialchars($_POST['cuisine'], ENT_IGNORE,'ISO-8859-15'));
+		$chambres= str_replace("ï¿½","EUR",htmlspecialchars($_POST['chambres'], ENT_IGNORE,'ISO-8859-15'));
+		$sanitaires= str_replace("ï¿½","EUR",htmlspecialchars($_POST['sanitaires'], ENT_IGNORE,'ISO-8859-15'));
+		$autres= str_replace("ï¿½","EUR",htmlspecialchars($_POST['autres'], ENT_IGNORE,'ISO-8859-15'));
+		$date1= str_replace("ï¿½","EUR",htmlspecialchars($_POST['date1'], ENT_IGNORE,'ISO-8859-15'));
+		$date2= str_replace("ï¿½","EUR",htmlspecialchars($_POST['date2'], ENT_IGNORE,'ISO-8859-15'));
+		$date3= str_replace("ï¿½","EUR",htmlspecialchars($_POST['date3'], ENT_IGNORE,'ISO-8859-15'));
+		$date4= str_replace("ï¿½","EUR",htmlspecialchars($_POST['date4'], ENT_IGNORE,'ISO-8859-15'));
+		$prix= str_replace("ï¿½","EUR",htmlspecialchars($_POST['prix'], ENT_IGNORE,'ISO-8859-15'));
+		$arrhe1= str_replace("ï¿½","EUR",htmlspecialchars($_POST['arrhe1'], ENT_IGNORE,'ISO-8859-15'));
+		$arrhe2= str_replace("ï¿½","EUR",htmlspecialchars($_POST['arrhe2'], ENT_IGNORE,'ISO-8859-15'));
+		$solde= str_replace("ï¿½","EUR",htmlspecialchars($_POST['solde'], ENT_IGNORE,'ISO-8859-15'));
+		$depot1= str_replace("ï¿½","EUR",htmlspecialchars($_POST['depot1'], ENT_IGNORE,'ISO-8859-15'));
+		$depot2= str_replace("ï¿½","EUR",htmlspecialchars($_POST['depot2'], ENT_IGNORE,'ISO-8859-15'));
+		$condition_paiement= str_replace("ï¿½","EUR",htmlspecialchars($_POST['condition_paiement'], ENT_IGNORE,'ISO-8859-15'));
+		$taxe= str_replace("ï¿½","EUR",htmlspecialchars($_POST['taxe'], ENT_IGNORE,'ISO-8859-15'));
+		$gaz= str_replace("ï¿½","EUR",htmlspecialchars($_POST['gaz'], ENT_IGNORE,'ISO-8859-15'));
+		$autre_taxe= str_replace("ï¿½","EUR",htmlspecialchars($_POST['autre_taxe'], ENT_IGNORE,'ISO-8859-15'));
+		//$clef= str_replace("ï¿½","EUR",htmlspecialchars($_POST['clef'], ENT_IGNORE,'ISO-8859-15'));
+		//$menage= str_replace("ï¿½","EUR",htmlspecialchars($_POST['menage'], ENT_IGNORE,'ISO-8859-15'));
+		$ville= str_replace("ï¿½","EUR",htmlspecialchars($_POST['ville'], ENT_IGNORE,'ISO-8859-15'));
 		$conditions_gene= $_POST['conditions_gene'];
 		$contrat='contrat';
 		$date_en_cours= date("Y-m-d H:i:s",time());
@@ -51,31 +51,31 @@ require('fpdf/fpdf.php');
 		$taille_police7= $_POST['taille_police_7'];
 		$taille_police8= $_POST['taille_police_8'];
 		if(isset($_POST['sexe-inscription'])){$sexe_inscription= $_POST['sexe-inscription'];}
-		$nom_inscription= strtoupper(str_replace("¤","EUR",htmlspecialchars($_POST['nom-inscription'], ENT_IGNORE,'ISO-8859-15')));//pas d'encodage pour etre comme dans le script originel
-		$prenom_inscription= strtolower(str_replace("¤","EUR",htmlspecialchars($_POST['prenom-inscription'], ENT_IGNORE,'ISO-8859-15')));// et avoir une bonne sortie lors de la connexio
+		$nom_inscription= strtoupper(str_replace("ï¿½","EUR",htmlspecialchars($_POST['nom-inscription'], ENT_IGNORE,'ISO-8859-15')));//pas d'encodage pour etre comme dans le script originel
+		$prenom_inscription= strtolower(str_replace("ï¿½","EUR",htmlspecialchars($_POST['prenom-inscription'], ENT_IGNORE,'ISO-8859-15')));// et avoir une bonne sortie lors de la connexio
 		if(!preg_match("#[^a-zA-Z0-9_.\-@]#", $_POST['pseudo-inscription'])){//pbme encodage membre
 			if(!empty($_POST['pseudo-inscription'])){
-			$pseudo_inscription= str_replace("¤","EUR",htmlspecialchars($_POST['pseudo-inscription'], ENT_IGNORE,'ISO-8859-15'));
+			$pseudo_inscription= str_replace("ï¿½","EUR",htmlspecialchars($_POST['pseudo-inscription'], ENT_IGNORE,'ISO-8859-15'));
 			}
 		}
-		if(!preg_match("#[^a-zA-Z0-9_.\-@]#", $_POST['mdp-inscription'])){//si il y a pas d'autres caractères que cela
+		if(!preg_match("#[^a-zA-Z0-9_.\-@]#", $_POST['mdp-inscription'])){//si il y a pas d'autres caractï¿½res que cela
 			if(!empty($_POST['mdp-inscription'])){
-			$mdp_inscription= str_replace("¤","EUR",htmlspecialchars($_POST['mdp-inscription'], ENT_IGNORE,'ISO-8859-15'));
+			$mdp_inscription= str_replace("ï¿½","EUR",htmlspecialchars($_POST['mdp-inscription'], ENT_IGNORE,'ISO-8859-15'));
 			}
 		}
-		$mdp2_inscription= str_replace("¤","EUR",htmlspecialchars($_POST['mdp2-inscription'], ENT_IGNORE,'ISO-8859-15'));
-		$email_inscription= str_replace("¤","EUR",htmlspecialchars($_POST['email-inscription'], ENT_IGNORE,'ISO-8859-15'));
+		$mdp2_inscription= str_replace("ï¿½","EUR",htmlspecialchars($_POST['mdp2-inscription'], ENT_IGNORE,'ISO-8859-15'));
+		$email_inscription= str_replace("ï¿½","EUR",htmlspecialchars($_POST['email-inscription'], ENT_IGNORE,'ISO-8859-15'));
 // Test CONDITION GENERALE et EMAIL  condition principale jusqu'a la fin rang1
 if (isset($e_mail) AND(preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['e_mail'])) AND isset($conditions_gene)){
-//inscription à la volée   ...  si tous les champs de l'inscription sont remplis et que l email est bon   rang 2
+//inscription ï¿½ la volï¿½e   ...  si tous les champs de l'inscription sont remplis et que l email est bon   rang 2
 if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!empty($_POST['prenom-inscription']))&&(isset($pseudo_inscription))&&(isset($mdp_inscription))&&(!empty($_POST['mdp2-inscription']))&&($mdp_inscription==$_POST['mdp2-inscription'])){
 	if (preg_match("#^[a-z0-9.-_]+@[a-z0-9.-_]{2,}\.[a-z]{2,4}$#" , $email_inscription)){
 		//on verifie et on insere le membre, sinon on sort (continue) 1 seul if suffit, mais finalement un else pour update !!!
 		try{
-			$bdd = new PDO('mysql:host=localhost;dbname=locati26_membres_emails','locati26','u4y7l8QkW0');}//host=localhost;dbname=test','root','');}
+			$bdd = new PDO('mysql:host=localhost;dbname=','','');}//host=localhost;dbname=test','root','');}
 		catch (Exception $e){
-			die('Erreur : Connection à la base de données impossible. Réessayez s\il vous plait' . $e->getMessage());}
-			//requete1: vérification email deja connu
+			die('Erreur : Connection ï¿½ la base de donnï¿½es impossible. Rï¿½essayez s\il vous plait' . $e->getMessage());}
+			//requete1: vï¿½rification email deja connu
 			$verification_email= $bdd->prepare('SELECT * FROM membres WHERE email = ?');
 			$verification_email->execute(array($email_inscription));
 			$donnee = $verification_email->fetch();
@@ -102,10 +102,10 @@ if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!e
 					));
 					//on envoie le mail   verifier en ligne car port non ouvert sur wamp
 					if(!$requete_insertion_membre){
-						die( 'les données n\'ont pas pu etre enregistrer. erreur de requete :'.mysql_error());
+						die( 'les donnï¿½es n\'ont pas pu etre enregistrer. erreur de requete :'.mysql_error());
 					}else{
-						//début de l'envoie du mail de confirmation   spf non inclus
-						// on gère le saut à la ligne selon les serveurs
+						//dï¿½but de l'envoie du mail de confirmation   spf non inclus
+						// on gï¿½re le saut ï¿½ la ligne selon les serveurs
 						if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $e_mail)){
 							$passage_ligne = "\r\n";
 						}else{
@@ -121,16 +121,16 @@ if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!e
 						$message_html.="<p style=\"font-size:1.5em;\"><span class=\"head1\" style=\"color:orange;\">location</span><span class=\"head2\">saint</span><span class=\"head3\" style=\"color:orange;\">jean</span><span class=\"head4\">de</span><span class=\"head5\" style=\"color:orange;\">luz</span><span class=\"head6\">.fr</span></p>";
 						$message_html.="</header>";
 						$message_html.="<h1 style=\"font-size:1.2em;\">Vos identifiants de connexion :</h1>";
-						$message_html.="<p>Bonjour et bienvenue, <br />vous êtes à présent membre de notre site.</p>";
+						$message_html.="<p>Bonjour et bienvenue, <br />vous ï¿½tes ï¿½ prï¿½sent membre de notre site.</p>";
 						$message_html.="<p>Votre pseudo pour ce site est : <b>$pseudo_inscription</b></p>";
 						$message_html.="<p>Votre mot de passe pour ce site est : <b>$mdp_inscription</b></p>";
-						$message_html.="<p>Utilisez l'espace membre pour modifier votre contrat dans la section \"mon contrat de location\" ou pour en créer un nouveau.<br />Si vous avez des problèmes pour vous connecter, ne faîtes pas de copier-coller.</p>";
-						$message_html.="<p><a href='http://www.locationsaintjeandeluz.fr/contrat.html' title='créer mon contrat de location saisonnière meublée gratuit'>Créez votre contrat de location saisonnière gratuit en ligne.</a></p>";
+						$message_html.="<p>Utilisez l'espace membre pour modifier votre contrat dans la section \"mon contrat de location\" ou pour en crï¿½er un nouveau.<br />Si vous avez des problï¿½mes pour vous connecter, ne faï¿½tes pas de copier-coller.</p>";
+						$message_html.="<p><a href='http://www.locationsaintjeandeluz.fr/contrat.html' title='crï¿½er mon contrat de location saisonniï¿½re meublï¿½e gratuit'>Crï¿½ez votre contrat de location saisonniï¿½re gratuit en ligne.</a></p>";
 						$message_html.="</section>";
 						$message_html.="</body></html>";
 						$sujet="Identifiants de connexion";
 						$boundary = "-----=".md5(rand());
-						//création du header
+						//crï¿½ation du header
 						$headers ='From: "info@locationsaintjeandeluz.fr"<info@locationsaintjeandeluz.fr>'.$passage_ligne;
 						$headers.="X-Sender: <www.locationsaintjeandeluz.fr>".$passage_ligne;
 						$headers.="X-Mailer: PHP".$passage_ligne;
@@ -139,14 +139,14 @@ if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!e
 						$headers.='Reply-To: info@locationsaintjeandeluz.fr'.$passage_ligne;
 						$headers.="MIME-Version: 1.0".$passage_ligne;
 						$headers.='Content-Type: Multipart/alternative;'.$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
-						// -----fin header et début message
-						//ajout 1ère boundary (frontière)
+						// -----fin header et dï¿½but message
+						//ajout 1ï¿½re boundary (frontiï¿½re)
 						$message = $passage_ligne."--".$boundary.$passage_ligne;
 						//=====Ajout message texte
 						$message.= "Content-Type: text/plain; charset=\"ISO-8859-15\"".$passage_ligne;
 						$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 						$message.= $passage_ligne.$message_text.$passage_ligne;
-						//ajout 2ème boundary (frontière)
+						//ajout 2ï¿½me boundary (frontiï¿½re)
 						$message.= $passage_ligne."--".$boundary.$passage_ligne;
 						//=====Ajout du message au format HTML
 						$message.= "Content-Type: text/html; charset=\"ISO-8859-15\"".$passage_ligne;
@@ -164,9 +164,9 @@ if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!e
 				$bdd = null;
 				// on insere le contrat
 				try{
-					$bdd = new PDO('mysql:host=localhost;dbname=locati26_contrat_etat','locati26','u4y7l8QkW0');}//host=localhost;dbname=test','root','');}
+					$bdd = new PDO('mysql:host=localhost;dbname=','','');}//host=localhost;dbname=test','root','');}
 				catch (Exception $e){
-					die('Erreur : ' . $e->getMessage('Connection à la base de donnée impossible. Veuillez fermer cette page et réessayer s\il vous plait'));}
+					die('Erreur : ' . $e->getMessage('Connection ï¿½ la base de donnï¿½e impossible. Veuillez fermer cette page et rï¿½essayer s\il vous plait'));}
 				$requete=$bdd->prepare('SELECT * FROM contrat WHERE pseudo = :pseudo');
 				$requete->execute(array('pseudo' => $pseudo_inscription));
 				$donnee= $requete->fetch();
@@ -231,9 +231,9 @@ if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!e
 			}else{
 				// UPDATE pas de echo pour les membres sinon plante mais pas d'enregistrement voir ajax sur formulaire pr verif
 				try{
-					$bdd = new PDO('mysql:host=localhost;dbname=locati26_contrat_etat','locati26','u4y7l8QkW0');}//host=localhost;dbname=test','root','');}
+					$bdd = new PDO('mysql:host=localhost;dbname=','','');}//host=localhost;dbname=test','root','');}
 				catch (Exception $e){
-					die('Erreur : ' . $e->getMessage('Connection à la base de donnée impossible. Veuillez fermer cette page et réessayer s\il vous plait'));}
+					die('Erreur : ' . $e->getMessage('Connection ï¿½ la base de donnï¿½e impossible. Veuillez fermer cette page et rï¿½essayer s\il vous plait'));}
 				$requete3=$bdd->prepare('UPDATE contrat SET nom=:nv_nom, adresse=:nv_adresse, telephone=:nv_telephone,e_mail=:nv_e_mail, adresse3=:nv_adresse3, 
 										type_location=:nv_type_location, superficie=:nv_superficie, nbre_pieces=:nv_nbre_pieces, nbre_pers=:nv_nbre_pers, 
 										fumeur=:nv_fumeur, animaux=:nv_animaux, vue=:nv_vue, salon=:nv_salon, cuisine=:nv_cuisine, chambres=:nv_chambres,
@@ -289,21 +289,21 @@ if((isset($_POST['sexe-inscription']))&&(!empty($_POST['nom-inscription']))&&(!e
 			}
 	}else{echo'<br /><b>votre mail n\'a pas une forme valide. Fermez cet onglet (ou page) et recommencez.</b><br /><br />';}//fin test mail 
 }
-// fin de l'inscription à la volée
-//test si e-mail pas présent dans bdd
+// fin de l'inscription ï¿½ la volï¿½e
+//test si e-mail pas prï¿½sent dans bdd
 		try{
-			$bdd = new PDO('mysql:host=localhost;dbname=locati26_membres_emails','locati26','u4y7l8QkW0');}//host=localhost;dbname=test','root','');}
+			$bdd = new PDO('mysql:host=localhost;dbname=','','');}//host=localhost;dbname=test','root','');}
 		catch (Exception $e){
-			die('Erreur : Connection à la base de données impossible. Réessayez s\il vous plait' . $e->getMessage());}
+			die('Erreur : Connection ï¿½ la base de donnï¿½es impossible. Rï¿½essayez s\il vous plait' . $e->getMessage());}
 $requete= $bdd->prepare('SELECT * FROM email WHERE e_mail= :e_mail');
 $requete->execute(array( ':e_mail'=>$e_mail));
 $donnee=$requete->fetch();
 if ($donnee['e_mail'] != $e_mail){//rang 2
 // requete insertion bdd
 try{
-	$bdd = new PDO('mysql:host=localhost;dbname=locati26_membres_emails','locati26','u4y7l8QkW0');}//host=localhost;dbname=test','root','');}
+	$bdd = new PDO('mysql:host=localhost;dbname=','','');}//host=localhost;dbname=test','root','');}
 catch (Exception $e){
-	die('Erreur : ' . $e->getMessage('Connection à la base de donnée impossible. Veuillez fermer cette page et réessayer s\il vous plait'));}
+	die('Erreur : ' . $e->getMessage('Connection ï¿½ la base de donnï¿½e impossible. Veuillez fermer cette page et rï¿½essayer s\il vous plait'));}
 $requete2=$bdd->prepare('INSERT INTO email( e_mail, contrat, conditions_gene, date_redaction) VALUES (:e_mail, :contrat, :conditions_gene, Now())');
 $requete2->execute(array('e_mail' => $e_mail,
 						'contrat'=> $contrat,
@@ -311,12 +311,12 @@ $requete2->execute(array('e_mail' => $e_mail,
 						));
 $requete2->closeCursor();
 }else{
-//test si contrat et état dans la base.
+//test si contrat et ï¿½tat dans la base.
 //if (($donnee['e_mail'] == $e_mail) AND ($donnee['contrat'] != $contrat)){
 		try{
-			$bdd3 = new PDO('mysql:host=localhost;dbname=locati26_membres_emails','locati26','u4y7l8QkW0');}//host=localhost;dbname=test','root','');}
+			$bdd3 = new PDO('mysql:host=localhost;dbname=','','');}//host=localhost;dbname=test','root','');}
 		catch (Exception $e){
-			die('Erreur : Connection à la base de données impossible. Réessayez s\il vous plait' . $e->getMessage());}
+			die('Erreur : Connection ï¿½ la base de donnï¿½es impossible. Rï¿½essayez s\il vous plait' . $e->getMessage());}
 $requete3= $bdd3->prepare('UPDATE email SET contrat=:nv_contrat, date_redaction=:nv_date_redaction WHERE e_mail=:email');
 $requete3->execute(array('nv_contrat'=> $contrat,
 							'nv_date_redaction'=> $date_en_cours,
@@ -325,19 +325,19 @@ $requete3->closeCursor();
 //}
 }
 //
-//début de la création du pdf
+//dï¿½but de la crï¿½ation du pdf
 //
 class PDF extends FPDF{
 function header(){
 	$this->SetFont('Arial','U',18);
 	$this->Cell(48);  //largeur totale du doc : 195
-	$this->Cell(100,7,'Contrat de location saisonnière',0,1,'C');
+	$this->Cell(100,7,'Contrat de location saisonniï¿½re',0,1,'C');
 	$this->Ln(3);
 	}
 function footer(){
 	$this->SetY(-12);
 	$this->SetFont('Arial','',7);
-	$this->Cell(60,3,'Mis à disposition gratuitement par locationsaintjeandeluz.fr',0,0,'L');
+	$this->Cell(60,3,'Mis ï¿½ disposition gratuitement par locationsaintjeandeluz.fr',0,0,'L');
 	$this->Cell(70,3,'Paraphes',0,0,'R');
 	$this->Cell(60,3,'Page '.$this->PageNo().'/2',0,0,'R');
 	}
@@ -347,7 +347,7 @@ function entre($txt){
 	$this->SetFont('Arial','B',8);
 	$this->Cell(190,3,$txt,0,1,'C');
 	}
-//infos propriétaires
+//infos propriï¿½taires
 function intit_proprio($txt){	
 	$this->SetXY(10,30);
 	$this->SetFont('Arial','B',9);
@@ -385,11 +385,11 @@ function email($txt){
 	$this->Cell(89,3,$txt,0,1);
 	}
 function info_proprio($txt1,$txt2,$txt3,$txt4){
-	$this->intit_proprio('Le(s) propriétaire(s) dénommé "le propriétaire" :');
+	$this->intit_proprio('Le(s) propriï¿½taire(s) dï¿½nommï¿½ "le propriï¿½taire" :');
 	$this->nom_proprio($txt1);
 	$this->intit_adresse('Adresse :');
 	$this->adresse($txt2);
-	$this->intit_telephone('Téléphone :');
+	$this->intit_telephone('Tï¿½lï¿½phone :');
 	$this->telephone($txt3);
 	$this->intit_email('E-mail :');
 	$this->Rect(10,28,90,60);
@@ -437,11 +437,11 @@ function email_locataires($txt){
 	$this->Cell(89,5,$txt,0,1);
 	}
 function info_locataires($txt1,$txt2,$txt3,$txt4){
-	$this->intit_locataires('Le(s) locataire(s) dénommé "le locataire" :');
+	$this->intit_locataires('Le(s) locataire(s) dï¿½nommï¿½ "le locataire" :');
 	$this->nom_locataires($txt1);
 	$this->intit_adresse_locataires('Adresse :');
 	$this->adresse_locataires($txt2);
-	$this->intit_telephone_locataires('Téléphone :');
+	$this->intit_telephone_locataires('Tï¿½lï¿½phone :');
 	$this->telephone_locataires($txt3);
 	$this->intit_email_locataires('E-mail :');
 	$this->email_locataires($txt4);
@@ -465,7 +465,7 @@ function contenu_adresse_location($txt){
 	$this->MultiCell(89,3.5,$txt,0,1);
 	}
 function adresse_location($txt){
-	$this->intit_adresse_location('Adresse précise :');
+	$this->intit_adresse_location('Adresse prï¿½cise :');
 	$this->contenu_adresse_location($txt);
 	$this->Rect(10,111,90,30);
 	}
@@ -489,7 +489,7 @@ function contenu_type($txt){
 function intit_superficie(){
 	$this->SetXY(110,119.15);
 	$this->SetFont('Arial','',9);
-	$this->Cell(26,3,'- Superficie(m²) :',0,0);
+	$this->Cell(26,3,'- Superficie(mï¿½) :',0,0);
 	}
 function contenu_superficie($txt){
 	$this->SetFont('Arial','B',9);
@@ -499,7 +499,7 @@ function contenu_superficie($txt){
 function intit_nbre_pieces(){
 	$this->SetXY(110,122.8);
 	$this->SetFont('Arial','',9);
-	$this->Cell(31,3,'- Nombre de pièces :',0,0);
+	$this->Cell(31,3,'- Nombre de piï¿½ces :',0,0);
 	}
 function contenu_nbre_pieces($txt){
 	$this->SetFont('Arial','B',9);
@@ -519,7 +519,7 @@ function contenu_nbre_pers($txt){
 function intit_fumeur(){
 	$this->SetXY(110,130.1);
 	$this->SetFont('Arial','',9);
-	$this->Cell(32,3,'- Fumeurs acceptés :',0,0);
+	$this->Cell(32,3,'- Fumeurs acceptï¿½s :',0,0);
 	}
 function contenu_fumeur($txt){
 	$this->SetFont('Arial','B',9);
@@ -529,7 +529,7 @@ function contenu_fumeur($txt){
 function intit_animaux(){
 	$this->SetXY(110,133.75);
 	$this->SetFont('Arial','',9);
-	$this->Cell(32,3,'- Animaux acceptés :',0,0);
+	$this->Cell(32,3,'- Animaux acceptï¿½s :',0,0);
 	}
 function contenu_animaux($txt){
 	$this->SetFont('Arial','B',9);
@@ -576,7 +576,7 @@ function contenu_salon($txt){
 	$this->MultiCell(188,3.5,$txt,0,1);
 	}
 function salon($txt){
-	$this->intit_salon('Salon/salle à manger :');
+	$this->intit_salon('Salon/salle ï¿½ manger :');
 	$this->contenu_salon($txt);
 	$this->Rect(10,150,190,35);
 	}
@@ -640,7 +640,7 @@ function contenu_autres($txt){
 	$this->MultiCell(89,3.5,$txt,0,1);
 	}
 function autres($txt){
-	$this->intit_autres('Autres (garage, jardin, situation géographique...) :');
+	$this->intit_autres('Autres (garage, jardin, situation gï¿½ographique...) :');
 	$this->contenu_autres($txt);
 	$this->Rect(110,238,90,35);
 	}
@@ -657,7 +657,7 @@ function intit_date($txt){
 	}
 function contenu_date($txt1,$txt2,$txt3,$txt4){
 	$this->SetFont('Arial','',11);
-	$this->Cell(190,4,'Location entendue du '.$txt1.' à '.$txt2.' heures jusqu\'au '.$txt3.' à '.$txt4.' heures.',0,1,'C');
+	$this->Cell(190,4,'Location entendue du '.$txt1.' ï¿½ '.$txt2.' heures jusqu\'au '.$txt3.' ï¿½ '.$txt4.' heures.',0,1,'C');
 	}
 function date_location($txt1,$txt2,$txt3,$txt4){
 	$this->suite();
@@ -673,14 +673,14 @@ function intit_prix($txt){
 	}
 function contenu_prix($txt1,$txt2,$txt3,$txt4,$txt5,$txt6){
 	$this->SetFont('Arial','',11);
-	$this->MultiCell(190,4,'Le prix de cette location est de '.$txt1.'€ par semaine, non inclus les charges mentionnées plus bas.
-		Les arrhes de cette location sont de '.$txt2.'% soit '.$txt3.'€ et seront versées lors de la signature du présent contrat.
-		Le solde du prix, soit '.$txt4.'€ sera payé le jour de la remise des clés, en même temps que le dépôt de
-		garantie de '.$txt5.'% soit '.$txt6.'€. Ce dépôt de garantie peut etre encaissé. Il sera rendu en intégralité jusqu\'à quinze jours aprés le départ du locataire, excepté en cas de dégâts.',0,'C');
+	$this->MultiCell(190,4,'Le prix de cette location est de '.$txt1.'ï¿½ par semaine, non inclus les charges mentionnï¿½es plus bas.
+		Les arrhes de cette location sont de '.$txt2.'% soit '.$txt3.'ï¿½ et seront versï¿½es lors de la signature du prï¿½sent contrat.
+		Le solde du prix, soit '.$txt4.'ï¿½ sera payï¿½ le jour de la remise des clï¿½s, en mï¿½me temps que le dï¿½pï¿½t de
+		garantie de '.$txt5.'% soit '.$txt6.'ï¿½. Ce dï¿½pï¿½t de garantie peut etre encaissï¿½. Il sera rendu en intï¿½gralitï¿½ jusqu\'ï¿½ quinze jours aprï¿½s le dï¿½part du locataire, exceptï¿½ en cas de dï¿½gï¿½ts.',0,'C');
 	}
 function prix($txt1,$txt2,$txt3,$txt4,$txt5,$txt6){
 	$this->SetY(48);
-	$this->intit_prix('Prix, arrhes et dépôt de garantie :');
+	$this->intit_prix('Prix, arrhes et dï¿½pï¿½t de garantie :');
 	$this->Ln();
 	$this->contenu_prix($txt1,$txt2,$txt3,$txt4,$txt5,$txt6);
 	}
@@ -694,7 +694,7 @@ function condition_paiement($txt){
 	$this->intit_condition_paiement();
 	$this->Ln();
 	$this->SetFont('Arial','',11);
-	$this->MultiCell(190,4,'Le locataire paiera par tout moyen convenu avec le propriétaire et mentionné ici: '.$txt.'.',0,'C');
+	$this->MultiCell(190,4,'Le locataire paiera par tout moyen convenu avec le propriï¿½taire et mentionnï¿½ ici: '.$txt.'.',0,'C');
 	}
 //condition annulation 
 function intit_condition_annulation(){
@@ -706,25 +706,25 @@ function condition_annulation(){
 	$this->intit_condition_annulation();
 	$this->Ln();
 	$this->SetFont('Arial','',11);
-	$this->MultiCell(190,4,'Les deux parties ont sept jours pour se rétracter à partir de la date de signature, sans qu\'aucune
-	pénalité ne leur soit infligée.',0,'C');
-	$this->Cell(190,4,'Passé ce délai :',0,1,'C');
-	$this->MultiCell(190,4,'- Le locataire peut se rétracter à tout moment mais perdra l\'intégralité de ses arrhes.',0,'C');
-	$this->MultiCell(190,4,'- Le propriétaire peut se rétracter à tout moment mais devra remettre le double des arrhes déjà versées par le locataire.',0,'C');
+	$this->MultiCell(190,4,'Les deux parties ont sept jours pour se rï¿½tracter ï¿½ partir de la date de signature, sans qu\'aucune
+	pï¿½nalitï¿½ ne leur soit infligï¿½e.',0,'C');
+	$this->Cell(190,4,'Passï¿½ ce dï¿½lai :',0,1,'C');
+	$this->MultiCell(190,4,'- Le locataire peut se rï¿½tracter ï¿½ tout moment mais perdra l\'intï¿½gralitï¿½ de ses arrhes.',0,'C');
+	$this->MultiCell(190,4,'- Le propriï¿½taire peut se rï¿½tracter ï¿½ tout moment mais devra remettre le double des arrhes dï¿½jï¿½ versï¿½es par le locataire.',0,'C');
 	}
 // charges ++
 function intit_charges(){
 	$this->SetFont('Arial','B',14);
-	$this->Cell(190,4,'Charges supplémentaires :',0,1,'C');
+	$this->Cell(190,4,'Charges supplï¿½mentaires :',0,1,'C');
 	}
 function charges($txt1,$txt2,$txt3){
 	$this->SetY(139);
 	$this->intit_charges();
 	$this->Ln();
 	$this->SetFont('Arial','',11);
-	$this->Cell(190,4,'D\'autres charges peuvent être demandées :',0,1,'C');
-	$this->Cell(190,4,'Taxe de séjour : '.$txt1.'',0,1,'C');
-	$this->Cell(190,4,'Eau/éléctricité/gaz : '.$txt2.'',0,1,'C');
+	$this->Cell(190,4,'D\'autres charges peuvent ï¿½tre demandï¿½es :',0,1,'C');
+	$this->Cell(190,4,'Taxe de sï¿½jour : '.$txt1.'',0,1,'C');
+	$this->Cell(190,4,'Eau/ï¿½lï¿½ctricitï¿½/gaz : '.$txt2.'',0,1,'C');
 	$this->Cell(190,4,'Autres : '.$txt3.'',0,1,'C');
 	}
 //obligations
@@ -738,11 +738,11 @@ function obligations(){
 	$this->Ln();
 	$this->SetFont('Arial','',11);
 	$this->Cell(190,4,'- Le locataire doit :',0,1,'C');
-	$this->Cell(190,4,'- Assumer sa responsabilité civile.',0,1,'C');
-	$this->Cell(190,4,'- Utiliser le logement "raisonnablement" et répondre des dégradations dans les plus brefs délais.',0,1,'C');
-	$this->Cell(190,4,'- Respecter la capacité maximale d\'hébergement.',0,1,'C');
-	$this->Cell(190,4,'- Faire le ménage si aucun forfait n\'est prévu, et rendre le bien en location dans le même état de propreté',0,1,'C');
-	$this->Cell(190,4,'que lors de son entrée dans les lieux.',0,1,'C');
+	$this->Cell(190,4,'- Assumer sa responsabilitï¿½ civile.',0,1,'C');
+	$this->Cell(190,4,'- Utiliser le logement "raisonnablement" et rï¿½pondre des dï¿½gradations dans les plus brefs dï¿½lais.',0,1,'C');
+	$this->Cell(190,4,'- Respecter la capacitï¿½ maximale d\'hï¿½bergement.',0,1,'C');
+	$this->Cell(190,4,'- Faire le mï¿½nage si aucun forfait n\'est prï¿½vu, et rendre le bien en location dans le mï¿½me ï¿½tat de propretï¿½',0,1,'C');
+	$this->Cell(190,4,'que lors de son entrï¿½e dans les lieux.',0,1,'C');
 	}
 function annexes(){
 	$this->SetY(207);
@@ -750,34 +750,34 @@ function annexes(){
 	$this->Cell(190,4,'Annexes :',0,1,'C');
 	$this->Ln();
 	$this->SetFont('Arial','',11);
-	$this->MultiCell(190,4,'Vous trouverez en annexe à ce contrat le dossier de diagnostic technique comprenant, si nécessaire, un 
-	constat de risque d\'exposition au plomb, un état des risques naturels et technologiques, 
-	ainsi qu\'un diagnostic de performances énergétiques.',0,'C');
+	$this->MultiCell(190,4,'Vous trouverez en annexe ï¿½ ce contrat le dossier de diagnostic technique comprenant, si nï¿½cessaire, un 
+	constat de risque d\'exposition au plomb, un ï¿½tat des risques naturels et technologiques, 
+	ainsi qu\'un diagnostic de performances ï¿½nergï¿½tiques.',0,'C');
 	}
 //signature
 function signature($txt1){
 	$this->SetY(231);
 	$this->Cell(30,5,'',0,0);
-	$this->Cell(40,5,'Fait en deux exemplaires à : '.$txt1.'   le' ,0,1,'L');
+	$this->Cell(40,5,'Fait en deux exemplaires ï¿½ : '.$txt1.'   le' ,0,1,'L');
 	$this->Ln();
-	$this->Cell(190,4,'Signatures des deux parties précédées de la mention "lu et approuvé"',0,1,'C');
-	$this->Cell(95,5,'Le(s) propriétaire(s)',0,0,'C');
+	$this->Cell(190,4,'Signatures des deux parties prï¿½cï¿½dï¿½es de la mention "lu et approuvï¿½"',0,1,'C');
+	$this->Cell(95,5,'Le(s) propriï¿½taire(s)',0,0,'C');
 	$this->Cell(95,5,'Le(s) locataire(s)',0,0,'C');
 	}
 }
-// $$$$$$$$$$$$$$$$$$ début phase d'appel $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// $$$$$$$$$$$$$$$$$$ dï¿½but phase d'appel $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $pdf = new PDF();
 $pdf->AddPage();
 //"entre"
 $pdf->entre("entre");
-// info du propriétaire
+// info du propriï¿½taire
 $pdf->info_proprio(stripslashes($nom),stripslashes($adresse),stripslashes($telephone),stripslashes($e_mail));
 // info du locataire et espace entre 2 cellules
 $pdf->Cell(10,52,'',0,0);
 $pdf->info_locataires(stripslashes($nom_locataires),stripslashes($adresse2),stripslashes($telephone2),stripslashes($e_mail2));
 //titre description
 $pdf->titre_description('Adresse et description de la location');
-//adresse précise
+//adresse prï¿½cise
 $pdf->adresse_location(stripslashes($adresse3));
 // description
 $pdf->description(stripslashes($type_location),stripslashes($superficie),stripslashes($nbre_pieces),stripslashes($nbre_pers),stripslashes($fumeur),stripslashes($animaux),stripslashes($vue));
@@ -812,6 +812,6 @@ $pdf->annexes();
 $pdf->signature(stripslashes($ville));
 $pdf->output('contrat-location.pdf','I');
 //
-//Fin de la condition generale et EMAIL du début
+//Fin de la condition generale et EMAIL du dï¿½but
 }else{header('location: erreur.php');
 }
