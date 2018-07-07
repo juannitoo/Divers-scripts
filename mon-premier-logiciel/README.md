@@ -1,6 +1,7 @@
-﻿# Suite mon titre pro de développeur logiciel
+﻿# Mes capacités JavaScript actuelles
 
-Je me suis dit que je devais réaliser mon premier logiciel.
+Suite à mon tite de dev logiciel, je me suis dit que je devais réaliser mon premier logiciel.
+Il a bien évolué depuis le début parce que j'ai dévié du projet d'origine ad
 L'objectif est dans un premier d'être présent sur le store de microsoft, au niveau mondial
 pour comprendre comment ca marche, et éventuellement si ça plait, gagner un peu d'argent.
 Je n'y connais encore rien, mais je ne suis pas inquiet.
@@ -9,8 +10,8 @@ je n'ai pas trouvé quelque chose de tout fait. Je me suis donc dit: "C'est pour
 Je me suis lancé dans l'aventure grâce au framework JS Electron que j'ai découvert pour l'occasion.
 
 
-* Electron utilise un script de 1er niveau NodeJs sur lequel on vient déclarer nos scripts NodeJs 
-et le point d'entrée de notre application (index.html qu'on lie à app.js)
+* Electron utilise un script de 1er niveau NodeJs (main.js que j'ai pompé sur la doc), sur lequel on vient 
+déclarer nos scripts NodeJs, ainsi que le point d'entrée de notre application (index.html qu'on lie à app.js)
 * il y a donc 2 process, 1 processus front (renderer), et un back (main)
 * Après, on peut faire comme on le souhaite, avec ou sans framework JS, comme une appli normale du web
 On a accès aux fichiers systèmes grace aux modules "fs" ou "fs-extra" mis à disposition, et on communique entre les 2 
@@ -29,5 +30,8 @@ de la performance "pure", temps d'éxécuion + lent, + de ram consommée. Mais c
 Surtout que je ne connais aucun langage comme le C ou autres, à part les bases du Python, que j'ai apprises récemment.
 
 
-Il ne marchera pas si vous le téléchargez. Je vous mets seulement des exemples, mais qui fonctionent quand ils sont liés.
+Je vous mets seulement des exemples, mais qui fonctionent quand ils sont liés.
+Appel API et Json dans "src/renderer/choix-ville.js"
+utilisation de la bibliothèque sortableJs (DragnDrop), gestion des vidéos comme sur youtube pour l'ordre et la suppression dans "src/renderer/gestion-videos.js.
+Scripts NodeJs pour intéragir avec les fichiers utilisateurs dans "src/main"
 
